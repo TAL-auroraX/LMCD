@@ -1,0 +1,6 @@
+{
+    "wandb_key" : "xxx",
+    "wandb_project" : "xxx",
+    "wandb_entity" : "xxx",
+    "wandb_host" : "https://api.wandb.ai"
+}

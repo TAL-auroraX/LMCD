@@ -1,0 +1,20 @@
+fold_id : 1 # 1,2,3,4,5
+use_wandb: false
+epochs: 10
+lr: 0.0001
+padding_side: "left" # tokenizer padding side
+cd_head_name: "IRT"  # IRT, MIRT, NCDM
+use_dataset : "NIPS34" #  NIPS34, XES3G5M
+task_name : "exercise_cold_start" # exercise_cold_start, cross_domain_cold_start
+target_domain : "algerbra" # algerbra,geometry,number
+
+# data config
+nips34_exercise_cold_start : data/question_cold_start/NIPS34/
+xes3g5m_exercise_cold_start : data/question_cold_start/XES3G5M/
+cross_domain_cold_start : data/cross_domain_cold_start/
+
+# LLM Model path
+llm_model_path : llm_model/Qwen2.5-1.5B
+
+# train prompt
+system_input : The following describes two types of information, namely, question information and student token. Please analyze the knowledge points involved in the question and judge the student's performance on the question based on the student token.\n"
