@@ -24,12 +24,9 @@ https://huggingface.co/datasets/AuroraX/LMCD/tree/main
 Put the downloaded data into the "data" folder,The file format is as follows:<br>
 
 data/ <br>
-├── cross_domain_cold_start/<br>
-├── kcs_discription/<br>
-├── question_cold_start/<br>
-&nbsp;&nbsp;&nbsp;├─── NIPS34/<br>
-&nbsp;&nbsp;&nbsp;└─── XES3G5M/<br>
-
+&nbsp;&nbsp;&nbsp;&nbsp;|── cross_domain_cold_start/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|── kcs_discription/<br>
+&nbsp;&nbsp;&nbsp;&nbsp;|── question_cold_start/<br>
 
 ## Step 2. Training configuration
 * In config/ds_config.json, you can configure batch size, whether to use offload strategy, zero strategy, etc.
